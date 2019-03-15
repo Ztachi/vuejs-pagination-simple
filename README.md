@@ -1,6 +1,6 @@
 # vuejs-pagination-simple
 
-> vue分页，自用
+> A Pagination Plugins of Vue.js
 
 # 安装
 ```
@@ -26,4 +26,3 @@ options:{
 ```
 this.$refs.pagination.init();//初始化分页，并调至第一页触发第一页选中事件
 ```
-
