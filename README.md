@@ -21,6 +21,13 @@ options:{
     maxLength:10//最多展示多少个页码标签（默认10）
     pageNo：10//初始化页码位置（默认1）
 }
+
+父元素声明一个methods:changePage，每次页数改变时调用
+methods: {
+    changePage(pageNum) {
+        console.log(pageNum);
+    }
+}
 ```
 # 方法
 ```
