@@ -3,7 +3,7 @@
  * @Date: 2018-09-03 10:12:05 
  * @Description: 分页组件
  * @Last Modified by: 詹真琦(legendryztachi@gmail.com)
- * @Last Modified time: 2019-03-15 17:27:22
+ * @Last Modified time: 2019-03-16 11:08:04
  */
  /*
  *接收参数：
@@ -30,7 +30,15 @@
 <script>
     export default {
         name: 'pagination',
-        props: ['totalPage', 'options'],
+        props: {
+            totalPage: {
+                default: 0
+            },
+            options: {
+                type: Object,
+                default: {}
+            }
+        },
         data() {
             return {
                 listMaxLength: this.options.maxLength == 0 ? 0 : (Math.ceil(this.options.maxLength) || 10), //分页器的一页最多显示多少页码
